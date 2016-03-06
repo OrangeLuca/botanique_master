@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/color_map_route_bg" >
+  
+    <TextView 
+        android:id="@+id/map_route_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_map_route_text"
+        android:textSize="10pt"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:layout_gravity="center_vertical" />
+    
+    <TextView 
+        android:id="@+id/map_route_moreinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_moreinfo"
+        android:textColor="@color/color_map_route_text"
+        android:textSize="10pt"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical" />
+    
+    <ImageView 
+        android:id="@+id/map_route_navigate" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        android:src="@drawable/navigation_bg"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"  >
+    </ImageView>
+    
+     <ImageView 
+        android:id="@+id/map_route_cancel_btn" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        android:src="@drawable/cancel_btn_bg"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"  >
+    </ImageView>
+
+</LinearLayout>

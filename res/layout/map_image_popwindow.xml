@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_route_popwindow_shape" >
+
+    <!-- android:textColor="@color/color_map_route_text" -->
+    <!--
+   <LinearLayout 
+       android:id="@+id/layout_mappop_title"
+       android:background="#33CC33"
+       android:layout_alignParentTop="true"
+       android:layout_height="40dip"
+       android:layout_width="match_parent">
+       
+    <TextView 
+        android:id="@+id/map_route_poptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="步行方案"
+        android:textColor="#FFFFFF"
+        android:textSize="13pt"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dip"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="5" >
+     </TextView>
+    
+     <ImageView 
+        android:id="@+id/map_route_popbtn" 
+        android:layout_height="match_parent" 
+        android:layout_width="wrap_content"
+        android:src="@drawable/cancel_btn_bg"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"  >
+    </ImageView>
+    -->
+
+    <com.coderlucas.botanique.HorizontalListView
+        android:id="@+id/map_image_poplist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:background="#33CC33" >
+        </com.coderlucas.botanique.HorizontalListView>
+
+</RelativeLayout>

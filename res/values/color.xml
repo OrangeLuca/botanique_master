@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_tab_selected">#33CC33</color>
+    <color name="color_tab_unselected">#808080</color>
+    <color name="color_tab_background">#FFFFFF</color>
+    <color name="color_tool_background">#262626</color>
+	<color name="color_background_write">#000000</color>
+	<color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color> 
+    <color name="main_background">#E6E6E6</color>
+    <color name="menu_item_selected">#CCCCCC</color>
+    <color name="menu_item_unselected">#FFFFFF</color>
+    <color name="color_map_button_text">#33CC33</color>
+    <color name="color_map_moreinfo_text">#0000FF</color>
+    <color name="color_map_info_text">#0000FF</color>
+    <color name="color_map_route_text">#FFFFFF</color>
+    <color name="color_map_route_bg">#33CC33</color>
+    <color name="color_syeupdate_surface">#000000</color>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:botanique="http://schemas.android.com/apk/res/com.coderlucas.botanique" 
+    android:id="@+id/linearlayout_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+       <!--  android:orientation="vertical" -->
+
+   <!--  <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tab_map_text" /> -->
+	
+	
+	
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+    
+    <com.coderlucas.botanique.MapRoutePopWindow
+        android:id="@+id/map_route_popw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip" />
+        
+    <com.coderlucas.botanique.MapImagePopWindow
+        android:id="@+id/map_image_popw"
+        android:layout_width="match_parent"
+        android:layout_height="450dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip" />
+        
+    <com.coderlucas.botanique.MapToolsBar
+        android:id="@+id/map_tools_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <com.coderlucas.botanique.MapRouteInfoBar
+        android:id="@+id/map_route_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dip"/>
+
+</RelativeLayout>

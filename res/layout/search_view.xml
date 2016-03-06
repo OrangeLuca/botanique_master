@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.coderlucas.botanique.MySearchBar
+        android:id="@+id/search_view_bar"
+        android:layout_height="54dip"
+        android:layout_width="match_parent"
+        ></com.coderlucas.botanique.MySearchBar>
+    
+    <ListView 
+        android:id="@+id/search_resultlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_view_bar"
+        android:cacheColorHint="#00FFFFFF"
+        android:background="#FFFFFF"
+        android:fadingEdge="none"
+        android:dividerHeight="0dp"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true">      
+    </ListView>
+    
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:botanique="http://schemas.android.com/apk/res/com.coderlucas.botanique" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background" >
+    
+	<!-- <include
+	    android:id="@+id/head_bar"
+	    layout="@layout/layout_head_bar" />   -->
+    
+    <FrameLayout 
+       android:id="@+id/fragment_container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+       <!-- android:layout_below="@id/head_bar" -->  
+ 
+    </FrameLayout>
+    
+    <RadioGroup 
+       android:id="@+id/tab_menu"
+       android:layout_width="match_parent"
+       android:layout_height="53dp"
+       android:layout_alignParentBottom="true"
+       android:background="@color/color_tab_background"
+       android:gravity="center_vertical"
+       android:orientation="horizontal"
+       android:paddingTop="3dip" >
+       
+        <com.coderlucas.botanique.TabRadioButton 
+            android:id="@+id/tab_map"
+            style="@style/TabMenuText"
+            android:checked="true"
+            android:clickable="true"
+            android:layout_weight="1"
+            botanique:drawableTop="@drawable/tab_map_bg"
+            botanique:drawableSize="32dp"
+            android:text="@string/tab_map_text"
+            android:textSize="7pt"
+            android:textColor="@color/color_tab"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+        
+        <com.coderlucas.botanique.TabRadioButton 
+            android:id="@+id/tab_qrcode"
+            style="@style/TabMenuText"
+            android:clickable="true"
+            android:layout_weight="1"
+            botanique:drawableTop="@drawable/tab_qrcode_bg"
+            botanique:drawableSize="32dp"
+            android:text="@string/tab_qrcode_text"
+            android:textSize="7pt"
+            android:textColor="@color/color_tab"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+        
+       	<com.coderlucas.botanique.TabRadioButton 
+            android:id="@+id/tab_addnew"
+            style="@style/TabMenuText"
+            android:clickable="true"
+            android:layout_weight="1"
+            botanique:drawableTop="@drawable/tab_addnew_bg"
+            botanique:drawableSize="32dp"
+            android:text="@string/tab_addnew_text"
+            android:textSize="7pt"
+            android:textColor="@color/color_tab"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+                
+        <com.coderlucas.botanique.TabRadioButton 
+            android:id="@+id/tab_account"
+            style="@style/TabMenuText"
+            android:clickable="true"
+            android:layout_weight="1"
+            botanique:drawableTop="@drawable/tab_account_bg"
+            botanique:drawableSize="32dp"
+            android:text="@string/tab_account_text"
+            android:textSize="7pt"
+            android:textColor="@color/color_tab"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" />
+           
+	</RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/tab_menu"
+        style="@style/TabSegmentLine"/>
+    
+</RelativeLayout>

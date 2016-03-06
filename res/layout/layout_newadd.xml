@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:scrollbars="vertical" >
+
+    <com.coderlucas.botanique.HeadBar
+        android:id="@+id/newadd_headbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/newadd_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/newadd_headbar"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/newadd_nametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="新植物名称：" />
+
+            <EditText
+                android:id="@+id/newadd_nameedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:editable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll1"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/newadd_describtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="详细描述：" />
+
+            <EditText
+                android:id="@+id/newadd_describedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:editable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll2"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/newadd_positiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="生长位置：" />
+
+            <EditText
+                android:id="@+id/newadd_positionedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:editable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll3"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/newadd_usertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="发现者：" />
+
+            <EditText
+                android:id="@+id/newadd_useredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:editable="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/newadd_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="下一步"
+            android:textColor="#FFFFFF"
+            android:textSize="14pt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/newadd_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_below="@id/newadd_headbar" >
+
+        <TextView
+            android:id="@+id/newadd_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="提 交"
+            android:textColor="#FFFFFF"
+            android:textSize="14pt" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/newadd_ok"
+            android:fadingEdge="vertical"
+            android:scrollbars="vertical" >
+
+            <!--
+             <LinearLayout
+            android:id="@+id/newadd_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/newadd_headbar"
+            android:orientation="vertical"
+            android:scrollbars="vertical" >-->
+
+            <GridLayout
+                android:id="@+id/newadd_btngridlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="54dip"
+                android:layout_marginTop="5dip"
+                android:clickable="false"
+                android:columnCount="2"
+                android:focusable="false"
+                android:orientation="horizontal"
+                android:rowOrderPreserved="true"
+                android:useDefaultMargins="true" >
+
+                <ImageView
+                    android:id="@+id/newadd_img_root"
+                    android:scaleType="centerCrop"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/root_img_unfinish" />
+
+                <ImageView
+                    android:id="@+id/newadd_img_stem"
+                    android:scaleType="centerCrop"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/stem_img_unfinish" />
+
+                <ImageView
+                    android:id="@+id/newadd_img_leaf"
+                    android:scaleType="centerCrop"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/leaf_img_unfinish" />
+
+                <ImageView
+                    android:id="@+id/newadd_img_flower"
+                    android:scaleType="centerCrop"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/flower_img_unfinish" />
+
+                <ImageView
+                    android:id="@+id/newadd_img_fruit"
+                    android:scaleType="centerCrop"
+                    android:drawingCacheQuality="high"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/fruit_img_unfinish"/>
+            </GridLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <!-- </LinearLayout> -->
+
+</RelativeLayout>

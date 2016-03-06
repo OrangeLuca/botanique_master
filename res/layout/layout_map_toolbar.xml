@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- xmlns:botanique="http://schemas.android.com/apk/res/com.coderlucas.botanique"  -->
+    <Button 
+        android:id="@+id/map_switch_btn" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        android:background="@null" >
+ 	</Button>
+ 	
+    <Button 
+        android:id="@+id/locate_btn" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        android:background="@null"  >
+    </Button>
+    <!-- <SeekBar
+    	android:id="@+id/seekBar_around"
+        android:layout_width="wrap_content"
+        android:rotationY=""
+        android:layout_height="200dp" /> -->
+        
+    <Button 
+        android:id="@+id/map_around_btn" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        android:background="@null" >
+ 	</Button>
+ 	
+    <EditText 
+        android:id="@+id/edittext_around"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:maxLength="4"
+        android:editable="false"
+        android:enabled="false"
+        android:hint="@null"
+        android:background="#33CC33"
+        android:alpha="0.5"
+        android:textColor="#FFFFFF"
+        android:textSize="12pt"/>
+    
+    <com.coderlucas.botanique.VerticalSeekBar
+        android:id="@+id/seekBar_around"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:thumb="@drawable/seekbar_thumb"
+        android:alpha="0.4">
+   	</com.coderlucas.botanique.VerticalSeekBar>
+
+    
+</LinearLayout>

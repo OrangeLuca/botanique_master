@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dip"
+    android:background="@color/color_tool_background" >
+
+    <ImageView
+        android:id="@+id/search_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="5dip"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/headbar_back" />
+
+     <Button
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="8dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/searchbar_btn_bg"
+        android:text="@string/text_search"
+        android:textAlignment="center"
+        android:textSize="10pt" />
+    
+    <EditText
+        android:id="@+id/search_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="5dip"
+        android:paddingLeft="5dip"
+        android:layout_toLeftOf="@+id/search_btn"
+        android:layout_toRightOf="@id/search_back"
+        android:background="#FFFFFF"
+        android:editable="true"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="荔枝"
+        android:textSize="12pt" />
+
+    <ImageView
+        android:id="@+id/search_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@+id/search_edittext"
+        android:layout_alignTop="@+id/search_edittext"
+        android:background="#20FFFFFF"
+        android:src="@drawable/search_view_delete" />
+
+</RelativeLayout>

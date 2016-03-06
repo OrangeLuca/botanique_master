@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Botanique</string>
+    <string name="tab_map_text">地图</string>
+    <string name="tab_qrcode_text">扫一扫</string>
+    <string name="tab_addnew_text">发现</string>
+    <string name="tab_account_text">我的</string>
+    <string name="action_search">搜索</string>
+	<string name="action_more">更多</string>
+	<string name="action_more_settings">系统设置</string>
+	<string name="action_more_donation">支持我们</string>
+	<string name="action_more_update">检查更新</string>
+	<string name="action_more_feedback">帮助与反馈</string>
+	<string name="text_local_pic">使用本地图片</string>
+	<string name="text_camera">使用摄像头扫描</string>
+	<string name="text_qrcode_title">扫描二维码</string>
+	<string name="qrcode_text_tip">对准二维码自动扫描</string>
+	<string name="text_addnew_newitem">新发现</string>
+	<string name="text_addnew_message">树洞</string>
+	<string name="text_addnew_around">附近的</string>
+	<string name="text_account_title">账号</string>
+	<string name="text_account_info">简介</string>
+	<string name="text_account_album">我的相册</string>
+	<string name="text_account_addnew">我的发现</string>
+	<string name="text_account_message">我的树洞</string>
+	<string name="text_share_message">深大校园里的植物你知道多少，开来长姿势！(分享自Botanique)</string>
+	<string name="text_share_title">干货！快分享！</string>
+	<string name="text_popmenu_around">搜索附近</string>
+	
+	<string name="text_moreinfo">详细</string>
+	<string name="text_classify_title">植物详细信息</string>
+	<string name="text_photo_title">植物图册</string>
+
+	<string name="text_search">搜索</string>
+	<string name="text_search_opton">位置</string>
+	<string name="text_search_optoff">详细</string>
+	
+	<string name="text_addnew_headbar_title">新发现</string>
+	<string name="text_settings_headbar_title">系统设置</string>
+	<string name="text_feedback_headbar_title">帮助与反馈</string>
+	
+</resources>

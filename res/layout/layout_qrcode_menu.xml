@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_background" >
+    
+    <com.coderlucas.botanique.MenuItem 
+        android:layout_marginTop="15dip"
+        android:id="@+id/qr_pic_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.coderlucas.botanique.MenuItem>
+    
+    <com.coderlucas.botanique.MenuItem 
+        android:id="@+id/qr_camera_btn"
+        android:layout_marginTop="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.coderlucas.botanique.MenuItem>
+
+    <TextView 
+        android:id="@+id/textview_result"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"/>
+  
+   
+</LinearLayout>
+

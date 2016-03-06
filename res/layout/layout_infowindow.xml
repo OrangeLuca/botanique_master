@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    
+    
+    <TextView
+        android:id="@+id/infowindow_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TextView>
+    
+	<TextView
+        android:id="@+id/infowindow_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="到这里去>>"
+        android:textColor="#FFFFFF"
+        android:textSize="10pt"
+        android:layout_gravity="right"
+        android:gravity="end"
+        android:clickable="true"
+        android:background="#33CC33" >
+    </TextView>
+    
+   <!--  <ImageView
+        android:id="@+id/infowindow_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ImageView>
+ -->
+
+</LinearLayout>
